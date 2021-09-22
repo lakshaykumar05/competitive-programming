@@ -1,0 +1,37 @@
+//  https://www.hackerrank.com/contests/third-year-w2/challenges/similar-dress-code
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    
+    int t;
+    
+    cin>>t;
+    
+    while(t--)
+    {
+        
+    int n,i,y=0,z=0;
+    
+    string s;
+    cin>>s;
+    
+    for(auto x:s)
+    {
+        if(x=='1')
+            y++;
+        else
+            z++;
+    }
+    
+    cout<<min(y,z)<<"\n";
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
